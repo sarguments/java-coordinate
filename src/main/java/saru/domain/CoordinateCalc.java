@@ -1,6 +1,8 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 // Calc?
 public class CoordinateCalc {
@@ -9,6 +11,11 @@ public class CoordinateCalc {
     private List<RowLine> rowLines = new ArrayList<>();
 
     private Set<Point> userInput;
+
+    public CoordinateCalc(Set<Point> userInput) {
+        this.userInput = userInput;
+        initRowLines();
+    }
 
     // indent 2
     public ShapeType checkShapeType(Set<Point> userInput) {
@@ -19,11 +26,6 @@ public class CoordinateCalc {
         }
 
         throw new IllegalArgumentException();
-    }
-
-    public CoordinateCalc(Set<Point> userInput) {
-        this.userInput = userInput;
-        initRowLines();
     }
 
     private void initRowLines() {

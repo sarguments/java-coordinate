@@ -1,6 +1,6 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.Set;
 
 public class Square extends Figure {
     public Square(Set<Point> userInput) {

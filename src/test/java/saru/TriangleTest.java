@@ -1,13 +1,15 @@
 package saru;
 
 import org.junit.Before;
-import saru.domain.*;
+import org.junit.Test;
+import saru.domain.FigureCalc;
+import saru.domain.Point;
+import saru.domain.Triangle;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
 
 public class TriangleTest {
     private Set<Point> points;

@@ -1,12 +1,13 @@
 package saru;
 
-import saru.domain.*;
+import org.junit.Test;
+import saru.domain.Point;
+import saru.domain.Util;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
 
 public class UtilTest {
     @Test

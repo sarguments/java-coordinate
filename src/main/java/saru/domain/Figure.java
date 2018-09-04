@@ -1,6 +1,8 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 abstract class Figure implements FigureCalc {
     static final int INDEX_ONE = 0;

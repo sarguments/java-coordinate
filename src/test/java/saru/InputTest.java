@@ -1,13 +1,15 @@
 package saru;
 
-import saru.domain.*;
-import saru.view.*;
+import org.junit.Before;
+import org.junit.Test;
+import saru.domain.CoordinateCalc;
+import saru.domain.Point;
+import saru.view.Input;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
-
-import org.junit.*;
 
 public class InputTest {
     private Set<Point> points;

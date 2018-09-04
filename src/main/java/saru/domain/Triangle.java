@@ -1,8 +1,8 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.Set;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure {
     public Triangle(Set<Point> userInput) {
         super(userInput);
 

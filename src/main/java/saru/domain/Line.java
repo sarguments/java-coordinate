@@ -1,6 +1,7 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.Set;
 
 class Line {
     private Set<Point> userInput;

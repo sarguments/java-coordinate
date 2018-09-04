@@ -1,6 +1,7 @@
 package saru.domain;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RowLine {
     private static final int MAX_VALUE = 25;

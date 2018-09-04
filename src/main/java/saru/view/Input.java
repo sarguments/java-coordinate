@@ -1,8 +1,10 @@
 package saru.view;
 
-import saru.domain.*;
+import saru.domain.Point;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 // SonarLint StandOutput warning 방지용
 @java.lang.SuppressWarnings("squid:S106")
@@ -41,15 +43,15 @@ public class Input {
         return points;
     }
 
-    public static String getUserInput() {
+    private static String getUserInput() {
         System.out.println();
         System.out.println(INPUT_USER_INPUT);
         return scanner.nextLine();
     }
 
     private static void loopAssignmentProc(String[] lineSplitArr, Set<Point> points) {
-        for (int i = 0; i < lineSplitArr.length; i++) {
-            String[] pointSplitArr = lineSplitArr[i].split(REGEX);
+        for (String aLineSplitArr : lineSplitArr) {
+            String[] pointSplitArr = aLineSplitArr.split(REGEX);
             assignmentSplitString(points, pointSplitArr);
         }
         checkPoint(lineSplitArr.length, points.size());

@@ -1,8 +1,12 @@
 package saru.view;
 
-import saru.domain.*;
+import saru.domain.CoordinateCalc;
+import saru.domain.Point;
+import saru.domain.RowLine;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 // SonarLint StandOutput warning 방지용
 @java.lang.SuppressWarnings("squid:S106")

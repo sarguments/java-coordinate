@@ -1,7 +1,8 @@
 package saru;
 
-import saru.domain.*;
-import saru.view.*;
+import saru.domain.CoordinateCalc;
+import saru.view.Input;
+import saru.view.Output;
 
 public class CoordinateMain {
     public static void main(String[] args) {
